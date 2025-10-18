@@ -4,6 +4,8 @@ Two dimensional molecular dynamics simulation for reproducing a solid to hexatic
 For a technical description of the code please review https://doi.org/10.48550/arXiv.2505.04867
 
 To get started run gui.py
-Parameters such as lattice size, particle number, initial temperature, final temperature, and cooling rate can be adjusted from the GUI. The GUI will automatically generate a random distribution of particle positions.
-To implement a J1 quench, or start the simulation with a preconfigured set of particles positions, adjust the code accordingly on lines 191 and 195 respectively.
-As the simulation evolves, particle states are periodically saved in the directory “states”. One can also save a particle state with the “save state” button on the GUI.
+Parameters such as lattice size, particle number, initial temperature, final temperature, and cooling rate can be adjusted from the GUI. The GUI will automatically generate a random set of particle positions.
+
+To initiate the simulation with a previous particle position set, change the load_par_positions argument in App to True. This will load the initial_state.csv file in the main directory (this .csv file can be replaced with any set of particle positions).
+
+By default, the J1 coupling is set by coupling = 0.3. A J1 quench can be implemented by changing target_coupling and coupling_rate. The former sets the J1 coupling to which the system will quench while the latter sets the J1 step per simulation step.

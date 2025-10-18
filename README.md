@@ -9,4 +9,4 @@ Parameters such as lattice size, particle number, initial temperature, final tem
 
 To initiate the simulation with a previous particle position set, change the `load_par_positions` argument in `App` to `True`. This will load the `initial_state.csv` file in the main directory (this .csv file can be replaced with any set of particle positions). Some initial states are provided in the `init_states` directory.
 
-By default, the J1 coupling is set by `coupling = 0.3`. A J1 quench can be implemented by changing `target_coupling` and `coupling_rate`. The former sets the "J1" coupling to which the system will quench while the latter sets the J1 step per simulation step.
+By default, the J1 coupling is set by `coupling = 0.3`. A J1 quench can be implemented by changing `target_coupling` and `coupling_rate`. The former sets the J1 coupling to which the system will quench while the latter sets the J1 step per simulation step.
